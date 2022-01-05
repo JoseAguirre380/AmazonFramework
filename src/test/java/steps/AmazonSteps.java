@@ -20,8 +20,6 @@ public class AmazonSteps extends AmazonBase {
     public void go_to_https_www_amazon_com() throws Throwable {
         driver.get(ReadProperties.getProperty("amazon.url"));
         driver.manage().window().maximize();
-
-
     }
 
     @Then("^Validate all menu items are present \\(the ones in black with black backgorund\\)$")
