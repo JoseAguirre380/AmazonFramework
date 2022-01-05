@@ -1,8 +1,5 @@
 package steps;
 
-
-import POM.SearchPage;
-import api.ApiCall;
 import config.ReadProperties;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
