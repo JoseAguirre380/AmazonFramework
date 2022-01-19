@@ -1,14 +1,13 @@
 package runner.browserManager;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class FirefoxDriverManager extends DriverManager {
 
-
     @Override
     protected void createDriver() {
-        System.setProperty("webdriver.gecko.driver","./src/test/java/resources/geckodriver.exe");
+        WebDriverManager.firefoxdriver().setup();
         driver = new FirefoxDriver();
-
     }
 }
